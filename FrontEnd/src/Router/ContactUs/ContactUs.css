@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --input-border-color: #ccc;
+    --input-focus-border-color: #4CAF50;
+    --button-bg-color: #4CAF50;
+    --button-text-color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-title h3 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.map {
+    flex: 1;
+}
+
+.form-container {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.input-field p.label {
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    border-color: var(--input-focus-border-color);
+}
+
+.input-field .icon {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    color: var(--input-border-color);
+}
+
+.textarea-input-field {
+    height: 120px;
+    resize: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: darken(var(--button-bg-color), 10%);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,120 @@
+.secfre {
+    width: 100%;
+    min-height: 500px;
+    // background-color: #F1F5F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &[data-theme='dark'] {
+      background-color: #121212 !important; 
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .card {
+        width: 45%;
+        display: flex;
+        
+  
+        img {
+          transition: transform 0.3s ease-in-out;
+  
+          &:hover {
+            transform: scale(1.1); // Image zoom effect on hover
+          }
+        }
+      }
+  
+      .cards {
+        margin-left: 50px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        p {
+          font-size: 70px;
+          font-weight: 800;
+        //   color: rgb(33, 37, 41);
+  
+          &[data-theme='dark'] {
+            color: #ffffff ; // Dark mode text color
+          }
+        }
+  
+        span {
+          font-size: 26px;
+          font-weight: 500;
+          color: rgb(71, 84, 103);
+  
+          &[data-theme='dark'] {
+            color: #cccccc; // Dark mode text color
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+   .secfre{
+    .container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .card{
+          display: none;
+        }
+        .cards {
+          width: 80%;
+          text-align: center;
+          margin-left: 0;
+          p{
+            font-size: 60px;
+          }
+        }
+      }
+   }
+  }
+
+  @media screen and (max-width: 768px) {
+   .secfre{
+    .container{
+        .cards {
+            p{
+
+                font-size: 46px;
+            }
+            span{
+
+                font-size: 20px;
+            }
+          }
+      
+    }
+   }
+  }
+
+  @media screen and (max-width: 576px) {
+  .secfre{
+    .container{
+        .cards{
+            p{
+                font-size: 37px;
+            }
+            span{
+
+                font-size: 17px;
+            }
+          }
+      
+          
+    }
+  }
+  }
+
+  
+  

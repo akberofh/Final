@@ -1,0 +1,26 @@
+.about-us p{
+    font-family: var(--fontFamily);
+    color: var(--black1);
+    font-size: 18px;
+}
+
+.about-us ul li{
+    font-family: var(--fontFamily);
+    list-style: square;
+}
+
+.about-us ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+
+.about-us ul li a:hover{
+    color: var(--primaryColorHover);
+}
+
+.contdire{
+  width: 90%;
+    border: 1px solid grey;
+}

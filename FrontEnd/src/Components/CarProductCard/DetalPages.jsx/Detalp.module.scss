@@ -1,0 +1,219 @@
+.detailContent{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.productDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  // border: 1px solid #ddd;
+  // border-radius: 10px;
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  // background-color: white;
+  width: 90%;
+
+
+  .image {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: pink;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .category{
+      margin-bottom: 10px;
+    }
+
+    .btns {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px 0;
+
+      button {
+        padding: 10px 20px;
+        width: 170px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:first-of-type {
+          background-color: white;
+          color: black;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+
+        &:last-of-type {
+          background-color: white;
+          color: black;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .ratings {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      color: pink;
+      margin-bottom: 10px;
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
+.otherProducts {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+  text-align: center;
+
+  h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+
+  .cards {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
+
+      ::-webkit-scrollbar {
+          display: none; // Hide scrollbar for a cleaner look
+      }
+  }
+}
+
+@media screen and (max-width:991px) {
+      .productDetails{
+          flex-wrap: wrap;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+          .image{
+              width: 70%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .info{
+              width: 70%;
+          }
+      }
+      .otherProducts{
+          h1{
+              font-size: 27px;
+          }
+      }
+}
+@media screen and (max-width:575px) {
+  .productDetails{
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .image{
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .info{
+          width: 70%;
+          .title{
+              font-size: 20px;
+          }
+          .price{
+              font-size: 17px;
+          }
+      }
+  }
+  .otherProducts{
+      h1{
+          font-size: 24px;
+      }
+  }
+}
+@media screen and (max-width:400px) {
+  .productDetails{
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .image{
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .info{
+          width: 70%;
+          .title{
+              font-size: 20px;
+          }
+          .price{
+              font-size: 17px;
+          }
+          .btns{
+              width: 100px;
+          }
+      }
+  }
+  .otherProducts{
+      h1{
+          font-size: 23px;
+          width: 70%;
+          text-align: center;
+      }
+  }
+}

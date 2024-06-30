@@ -1,0 +1,90 @@
+.logodiv {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Kartları sağa doğru hizalıyor */
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 15%; /* Kart genişliği */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* İçerik arasındaki boşluk */
+  border: 1px solid rgba(128, 128, 128, 0.507);
+  height: 220px;
+  transition:  0.4s ease;
+}
+
+.card:hover {
+  border: 2px solid blue; /* Hover durumunda sınır rengi */
+  transition:  0.1s ease;
+
+}
+
+.card img {
+  width: 40%;
+  transition: transform 0.4s ease; /* Resim büyüme animasyonu */
+}
+
+.card img:hover {
+  transform: scale(1.1); /* Resim büyütme animasyonu */
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 19%; /* Ekran boyutuna göre genişlik ayarı */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 24%; /* Ekran boyutuna göre genişlik ayarı */
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 29%; /* Ekran boyutuna göre genişlik ayarı */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 44%; /* Ekran boyutuna göre genişlik ayarı */
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center; /* Küçük ekranlarda kartları ortalamak için */
+  }
+
+  .card {
+    width: 95%; /* Ekran boyutuna göre genişlik ayarı */
+  }
+}

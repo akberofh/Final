@@ -1,0 +1,88 @@
+.fqa-container {
+    max-width: 1450px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .section-title h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .fqa-component-item {
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .accordion-checkbox {
+    display: none;
+  }
+  
+  .accordion-header {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: block;
+  }
+  
+  .accordion-header::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-checkbox:checked + .accordion-header::after {
+    transform: rotate(180deg);
+  }
+  
+  .accordion-body {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-checkbox:checked ~ .accordion-body {
+    max-height: 200px;
+    padding: 20px;
+  }
+  
+  .accordion-body p {
+    margin: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Dark Mode */
+body[data-theme='dark'] .section-title h3 {
+    color: black; /* Beyaz renk */
+  }
+  
+  body[data-theme='dark'] .accordion-header {
+    background-color: #343a40; /* Koyu gri arka plan */
+    color: black; /* Beyaz renk */
+  }
+  
+  body[data-theme='dark'] .accordion-body {
+    background-color: #495057; /* Daha koyu gri arka plan */
+    color: black; /* Beyaz renk */
+  }
+  

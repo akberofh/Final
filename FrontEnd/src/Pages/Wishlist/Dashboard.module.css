@@ -1,0 +1,69 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todoPhoto {
+    width: 100px;
+    height: 100px;
+  }
+
+.profileButton, .addButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.profileButton:hover, .addButton:hover {
+    background-color: #0056b3;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todoItem {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todoItem h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.todoItem p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.deleteButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    font-size: 14px;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}

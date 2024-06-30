@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* App  */
+.App {
+    background-color: #ece5dd;
+    max-height: 100%;
+    padding: 20px;
+}
+
+/* Login  */
+
+
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* tam ekran yüksekliği */
+}
+
+.login_form {
+    background-color: #ffffff; /* form arkaplan rengi */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* hafif gölge */
+    width: 400px; /* form genişliği */
+}
+
+.login_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login_icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #61dafb; /* React logosu rengi */
+}
+
+.login_input {
+    margin-bottom: 20px;
+}
+
+.login_input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.dropzone p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #61dafb; /* React logosu rengi */
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #42a5f5; /* Daha koyu mavi hover rengi */
+}
+
+/* Chat Container  */
+.chats_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chats_icon {
+    color: rgb(0, 0, 0);
+}
+
+.chats_logout {
+    color: rgb(6, 152, 152);
+}
+
+
+.home {
+    padding: 0 10%;
+}
+/* chats list  */
+.chats_list {
+    height: 75vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.chat_sender {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row
+}
+
+.chat_sender img,
+.chat_receiver img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.chat_sender p {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 60%,
+}
+
+.chat_receiver {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row
+}
+
+
+.chat_receiver p {
+    padding: 10px;
+    background-color: #aff6be;
+    border-radius: 10px;
+    max-width: 60%,
+}
+
+/* input text  */
+
+.inputtext_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.inputtext_container button {
+    width: 10%;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(4, 170, 170);
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.inputtext_container textarea {
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    font-size: 18px,
+}
